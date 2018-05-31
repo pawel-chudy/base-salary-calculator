@@ -1,0 +1,238 @@
+/* RESET CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+/* end of RESET CSS */
+
+/* FONT ROBOTO */
+@font-face { font-family: Roboto; src: url("Roboto-Regular.ttf"); } 
+
+#container {
+    width: 800px;
+    border: 1px solid #e7e7e7;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-radius: 4px;
+    color: #444;
+    box-shadow: 0 1px 3px #c5c5c5a6;
+}
+#container h2{
+    text-align: center;
+}
+#container p {
+    text-align: center;
+    padding-bottom: 54px;
+}
+div {
+    position: relative;
+}
+.pdBtm{
+    padding-bottom: 50px;
+}
+input {
+    width: 100px;
+    padding-left: 16px;
+    font-size: 22px;
+    border-radius: 2px;
+    border: 1px solid #b3b3b3;
+}
+input:focus{
+   outline: 0; 
+}
+#data{
+    padding-left: 36px;
+    padding-bottom: 25px;
+}
+#data > div > span {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#data select {
+    top: -6px;
+    left: 318px;
+    position: absolute;
+    height: 35px;
+    font-size: 16px;
+}
+#data option{
+    line-height: 1.5em;
+    height: 20px;
+    font-style: italic;
+    display: block;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+#clear {
+    background: #cc4300;
+    color: #fff;
+    height: 30px;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 600;
+    margin: 6px 0;
+    padding: 0 22px;
+}
+#clear:hover {
+    background: #ff6c00;
+    transition: 333ms;
+}
+#clear:focus {
+    outline: 0;
+}
+#splWorkingHours{
+    color: #0078ff;
+    padding-left: 98px;
+    font-size: 24px !important;
+    padding-left: 40px;
+    top: 3px;
+    position: absolute;
+}
+#splBasicPay {
+    margin-left: 214px;
+    color: #000;
+    font-size: 24px;
+    background: #ffffc3;
+}
+#inppn{
+    margin-left: 164px;
+    width: 80px;
+    color: #0078ff;
+}
+#inppn:focus {
+    box-shadow: 0 0 5px #0078ff;
+    border: 1px solid #0078ff;
+}
+#splWage{
+    margin-left: 260px;
+}
+
+.select-style {
+    border: 1px solid #ccc;
+    width: 120px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.select-style select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+.select-style select:focus {
+    outline: none;
+}
+.selected {
+    background-color: rgba(136, 193, 24, 0.75);
+}
+.custom-select {
+    position: absolute;
+    padding-bottom: 0;
+    display: inline-block;
+    width: 424px;
+    left: 300px;
+    top: -8px;
+}
+.custom-select select {
+    display: none; 
+}
+.select-selected {
+    background-color: #fffcdb;
+}
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #000 transparent transparent transparent;
+}
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #000 transparent;
+    top: 7px;
+}
+.select-items div,.select-selected {
+    color: #000;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.25) transparent;
+    cursor: pointer;
+    font-size: 17px;
+}
+.select-items {
+    position: absolute;
+    background-color: #f5f5f5;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+.select-hide {
+    display: none;
+}
+.select-items div:hover, .same-as-selected {
+    background-color: #ffffc3;
+}
+#labBold{
+    font-weight: 600;
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Base salary calculator</title>
+      <link rel="stylesheet" href="files/style.css">
+   </head>
+   <body>
+      <div id="container">
+         <h2>Base salary calculator</h2>
+         <p>since april 2018r</p>
+         <form id="data">
+            <div class="pdBtm">
+               <label>Education level:</label>
+               <div class="custom-select">
+                  <select id="edLvl">
+                     <option value="" selected disabled hidden>Select</option>
+                     <option value="mrWh">Master with pedagogical preparation</option>
+                     <option value="mrbchWht">Master without pedagogical preparation</option>
+                     <option value="mrbchWht">Bachelor with pedagogical preparation</option>
+                     <option value="bchWht">Bachelor without pedagogical preparation</option>
+                     <option value="bchWht">Other</option>
+                  </select>
+               </div>
+            </div>
+            <div class="pdBtm">
+               <label>Ascension degree:</label>
+               <div class="custom-select" style="width:200px">
+                  <select id="degrees">
+                     <option value="" selected disabled hidden style="background-color: red;">Select</option>
+                     <option value="intern">intern</option>
+                     <option value="contractual">contractual</option>
+                     <option value="designated">designated</option>
+                     <option value="certificated">certificated</option>
+                  </select>
+               </div>
+            </div>
+            <div class="pdBtm">
+               <label>Workload:</label>
+               <div class="custom-select" style="width:200px">
+                  <select id="workload">
+                     <option value="" selected disabled hidden>Select</option>
+                     <option value="18">18</option>
+                     <option value="22">22</option>
+                     <option value="25">25</option>
+                     <option value="30">30</option>
+                  </select>
+               </div>
+            </div>
+            <div class="pdBtm">
+               <label>Working hours:</label>
+               <input onchange="calcSalaries()" type=text id="inppn">
+               <span id="splWorkingHours"></span>
+            </div>
+            <div class="pdBtm">
+               <label>Wage:</label>
+               <span id="splWage"></span>
+            </div>
+            <div class="pdBtm">
+               <label id="labBold">Basic pay:</label>
+               <span id="splBasicPay"></span>
+            </div>
+            <button id="clear" onclick="clearInps()">Clear data</button>
+         </form>
+      </div>
+      <script src="files/script.js"></script>
+      <script src="files/dpdwnLst.js"></script>
+   </body>
+</html>
