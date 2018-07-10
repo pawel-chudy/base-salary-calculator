@@ -233,6 +233,6 @@ input:focus{
 .select-items div:hover, .same-as-selected {
     background-color: #ffffc3;
 }
-#labBold{
+.pdBtm:last-of-type label{ 
     font-weight: 600;
 }
